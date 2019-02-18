@@ -145,17 +145,17 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Файл";
+            this.columnHeader1.Text = "File";
             this.columnHeader1.Width = 800;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Пароль";
+            this.columnHeader2.Text = "Finded password";
             this.columnHeader2.Width = 200;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Тип";
+            this.columnHeader3.Text = "Type";
             // 
             // label5
             // 
