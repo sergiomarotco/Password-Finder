@@ -1,5 +1,4 @@
 ﻿using System;
-using Excel = Microsoft.Office.Interop.Excel;
 using ExcelDataReader;
 using System.IO;
 using System.Data;
@@ -8,7 +7,6 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Word = Microsoft.Office.Interop.Word;
-using System.Diagnostics;
 using System.Xml;
 
 namespace PasswordFinder
@@ -330,6 +328,11 @@ namespace PasswordFinder
             label5.Text = "Word for find passwords:";
             button1.Text = "Find passwords";
             label3.Text = "Folders where find files:";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Icon = Properties.Resources.ico;
         }
     }
     public static class StringExtensions
