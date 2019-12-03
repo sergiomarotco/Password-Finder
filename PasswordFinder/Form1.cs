@@ -320,6 +320,9 @@ namespace PasswordFinder
             label5.Text = "Список слов для поиска паролей:";
             button1.Text = "Найти пароли";
             label3.Text = "Папки где искать файлы:";
+            listView1.Columns[0].Text = "Найденный файл";
+            listView1.Columns[1].Text = "Найденный пароль";
+            listView1.Columns[2].Text = "Тип";
         }
 
         private void EngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -328,6 +331,9 @@ namespace PasswordFinder
             label5.Text = "Word for find passwords:";
             button1.Text = "Find passwords";
             label3.Text = "Folders where find files:";
+            listView1.Columns[0].Text = "Finded file";
+            listView1.Columns[1].Text = "Finded password";
+            listView1.Columns[2].Text = "Type";
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,223 +59,158 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(9, 211);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(731, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Find passwords";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(9, 51);
+            resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(731, 157);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "C:\\Users\\Sergiomarotco\\Documents\\Visual Studio 2017\\Projects\\PasswordFinder\\Passw" +
-    "ordFinder\\тест";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 9);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Список папок для поиска паролей:";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(817, 51);
+            resources.ApplyResources(this.richTextBox2, "richTextBox2");
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(406, 129);
-            this.richTextBox2.TabIndex = 3;
-            this.richTextBox2.Text = "*парол*,*pass*,*pwd*,*логин*,*login*";
             this.richTextBox2.TextChanged += new System.EventHandler(this.RichTextBox2_TextChanged);
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(749, 211);
+            resources.ApplyResources(this.richTextBox3, "richTextBox3");
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(474, 49);
-            this.richTextBox3.TabIndex = 4;
-            this.richTextBox3.Text = "pwd,pass,парол,пасс,парл,password,пароль\n";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(746, 28);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Text to find files (* - analyze all files):";
             // 
             // statusStrip1
             // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 703);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1235, 22);
-            this.statusStrip1.TabIndex = 10;
-            this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
             // listView1
             // 
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.AllowColumnReorder = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(0, 266);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1235, 437);
-            this.listView1.TabIndex = 11;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "File";
-            this.columnHeader1.Width = 800;
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Finded password";
-            this.columnHeader2.Width = 200;
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Type";
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(746, 191);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 17);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Word for find passwords:";
             // 
             // docBox
             // 
-            this.docBox.AutoSize = true;
+            resources.ApplyResources(this.docBox, "docBox");
             this.docBox.Checked = true;
             this.docBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.docBox.Location = new System.Drawing.Point(749, 51);
             this.docBox.Name = "docBox";
-            this.docBox.Size = new System.Drawing.Size(62, 21);
-            this.docBox.TabIndex = 14;
-            this.docBox.Text = "*.doc";
             this.docBox.UseVisualStyleBackColor = true;
             // 
             // xlsBox
             // 
-            this.xlsBox.AutoSize = true;
-            this.xlsBox.Location = new System.Drawing.Point(749, 78);
+            resources.ApplyResources(this.xlsBox, "xlsBox");
             this.xlsBox.Name = "xlsBox";
-            this.xlsBox.Size = new System.Drawing.Size(55, 21);
-            this.xlsBox.TabIndex = 14;
-            this.xlsBox.Text = "*.xls";
             this.xlsBox.UseVisualStyleBackColor = true;
             // 
             // txtBox
             // 
-            this.txtBox.AutoSize = true;
-            this.txtBox.Location = new System.Drawing.Point(749, 105);
+            resources.ApplyResources(this.txtBox, "txtBox");
             this.txtBox.Name = "txtBox";
-            this.txtBox.Size = new System.Drawing.Size(53, 21);
-            this.txtBox.TabIndex = 14;
-            this.txtBox.Text = "*.txt";
             this.txtBox.UseVisualStyleBackColor = true;
             // 
             // rtfBox
             // 
-            this.rtfBox.AutoSize = true;
-            this.rtfBox.Location = new System.Drawing.Point(749, 132);
+            resources.ApplyResources(this.rtfBox, "rtfBox");
             this.rtfBox.Name = "rtfBox";
-            this.rtfBox.Size = new System.Drawing.Size(52, 21);
-            this.rtfBox.TabIndex = 14;
-            this.rtfBox.Text = "*.rtf";
             this.rtfBox.UseVisualStyleBackColor = true;
             // 
             // xmlBox
             // 
-            this.xmlBox.AutoSize = true;
-            this.xmlBox.Location = new System.Drawing.Point(749, 159);
+            resources.ApplyResources(this.xmlBox, "xmlBox");
             this.xmlBox.Name = "xmlBox";
-            this.xmlBox.Size = new System.Drawing.Size(59, 21);
-            this.xmlBox.TabIndex = 14;
-            this.xmlBox.Text = "*.xml";
             this.xmlBox.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.preferencesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1235, 28);
-            this.menuStrip1.TabIndex = 15;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // preferencesToolStripMenuItem
             // 
+            resources.ApplyResources(this.preferencesToolStripMenuItem, "preferencesToolStripMenuItem");
             this.preferencesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.langToolStripMenuItem});
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
-            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
-            this.preferencesToolStripMenuItem.Text = "Preferences";
             // 
             // langToolStripMenuItem
             // 
+            resources.ApplyResources(this.langToolStripMenuItem, "langToolStripMenuItem");
             this.langToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.engToolStripMenuItem,
             this.rusToolStripMenuItem});
             this.langToolStripMenuItem.Name = "langToolStripMenuItem";
-            this.langToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
-            this.langToolStripMenuItem.Text = "Lang";
             // 
             // engToolStripMenuItem
             // 
+            resources.ApplyResources(this.engToolStripMenuItem, "engToolStripMenuItem");
             this.engToolStripMenuItem.Name = "engToolStripMenuItem";
-            this.engToolStripMenuItem.Size = new System.Drawing.Size(109, 26);
-            this.engToolStripMenuItem.Text = "Eng";
             this.engToolStripMenuItem.Click += new System.EventHandler(this.EngToolStripMenuItem_Click);
             // 
             // rusToolStripMenuItem
             // 
+            resources.ApplyResources(this.rusToolStripMenuItem, "rusToolStripMenuItem");
             this.rusToolStripMenuItem.Name = "rusToolStripMenuItem";
-            this.rusToolStripMenuItem.Size = new System.Drawing.Size(109, 26);
-            this.rusToolStripMenuItem.Text = "Rus";
             this.rusToolStripMenuItem.Click += new System.EventHandler(this.RusToolStripMenuItem_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 28);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 17);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Folders where find files:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 725);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.xmlBox);
             this.Controls.Add(this.rtfBox);
@@ -293,8 +229,6 @@
             this.Controls.Add(this.button1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Поисковик паролей";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
