@@ -84,6 +84,7 @@
             // 
             resources.ApplyResources(this.richTextBox3, "richTextBox3");
             this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
             // 
             // label2
             // 
@@ -92,25 +93,25 @@
             // 
             // statusStrip1
             // 
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
-            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             // 
             // listView1
             // 
-            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.AllowColumnReorder = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Name = "listView1";
@@ -141,65 +142,70 @@
             this.docBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.docBox.Name = "docBox";
             this.docBox.UseVisualStyleBackColor = true;
+            this.docBox.CheckedChanged += new System.EventHandler(this.docBox_CheckedChanged);
             // 
             // xlsBox
             // 
             resources.ApplyResources(this.xlsBox, "xlsBox");
             this.xlsBox.Name = "xlsBox";
             this.xlsBox.UseVisualStyleBackColor = true;
+            this.xlsBox.CheckedChanged += new System.EventHandler(this.xlsBox_CheckedChanged);
             // 
             // txtBox
             // 
             resources.ApplyResources(this.txtBox, "txtBox");
             this.txtBox.Name = "txtBox";
             this.txtBox.UseVisualStyleBackColor = true;
+            this.txtBox.CheckedChanged += new System.EventHandler(this.txtBox_CheckedChanged);
             // 
             // rtfBox
             // 
             resources.ApplyResources(this.rtfBox, "rtfBox");
             this.rtfBox.Name = "rtfBox";
             this.rtfBox.UseVisualStyleBackColor = true;
+            this.rtfBox.CheckedChanged += new System.EventHandler(this.rtfBox_CheckedChanged);
             // 
             // xmlBox
             // 
             resources.ApplyResources(this.xmlBox, "xmlBox");
             this.xmlBox.Name = "xmlBox";
             this.xmlBox.UseVisualStyleBackColor = true;
+            this.xmlBox.CheckedChanged += new System.EventHandler(this.xmlBox_CheckedChanged);
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.preferencesToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // preferencesToolStripMenuItem
             // 
-            resources.ApplyResources(this.preferencesToolStripMenuItem, "preferencesToolStripMenuItem");
             this.preferencesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.langToolStripMenuItem});
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
+            resources.ApplyResources(this.preferencesToolStripMenuItem, "preferencesToolStripMenuItem");
             // 
             // langToolStripMenuItem
             // 
-            resources.ApplyResources(this.langToolStripMenuItem, "langToolStripMenuItem");
             this.langToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.engToolStripMenuItem,
             this.rusToolStripMenuItem});
             this.langToolStripMenuItem.Name = "langToolStripMenuItem";
+            resources.ApplyResources(this.langToolStripMenuItem, "langToolStripMenuItem");
             // 
             // engToolStripMenuItem
             // 
-            resources.ApplyResources(this.engToolStripMenuItem, "engToolStripMenuItem");
             this.engToolStripMenuItem.Name = "engToolStripMenuItem";
+            resources.ApplyResources(this.engToolStripMenuItem, "engToolStripMenuItem");
             this.engToolStripMenuItem.Click += new System.EventHandler(this.EngToolStripMenuItem_Click);
             // 
             // rusToolStripMenuItem
             // 
-            resources.ApplyResources(this.rusToolStripMenuItem, "rusToolStripMenuItem");
             this.rusToolStripMenuItem.Name = "rusToolStripMenuItem";
+            resources.ApplyResources(this.rusToolStripMenuItem, "rusToolStripMenuItem");
             this.rusToolStripMenuItem.Click += new System.EventHandler(this.RusToolStripMenuItem_Click);
             // 
             // label3
@@ -229,6 +235,7 @@
             this.Controls.Add(this.button1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

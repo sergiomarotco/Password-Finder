@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Word = Microsoft.Office.Interop.Word;
 using System.Xml;
+using PasswordFinder.Properties;
+
 
 namespace PasswordFinder
 {
@@ -311,7 +313,8 @@ namespace PasswordFinder
             richTextBox2.Text = richTextBox2.Text.Replace("*.rtf", "");
             richTextBox2.Text = richTextBox2.Text.Replace("*.xml", "");
             richTextBox2.Text = richTextBox2.Text.Replace(",,", "");
-
+            Settings.Default.findstring = richTextBox2.Text;
+            Settings.Default.Save();
         }
 
         private void RusToolStripMenuItem_Click(object sender, EventArgs e)
@@ -338,7 +341,49 @@ namespace PasswordFinder
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Icon = Properties.Resources.ico;
+            Icon = Resources.ico;
+        }
+
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            Settings.Default.findwords = richTextBox3.Text;
+            Settings.Default.Save(); Settings.Default.Reload(); 
+        }
+
+        private void docBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Settings.Default.doc = docBox.Checked;
+            Settings.Default.Save(); 
+        }
+
+        private void xlsBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Settings.Default.xls = xlsBox.Checked;
+            Settings.Default.Save(); Settings.Default.Upgrade(); 
+        }
+
+        private void txtBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Settings.Default.txt = txtBox.Checked;
+            Settings.Default.Save();
+        }
+
+        private void rtfBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Settings.Default.rtf = rtfBox.Checked;
+            Settings.Default.Save();
+        }
+
+        private void xmlBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Settings.Default.xml = xmlBox.Checked;
+            Settings.Default.Save(); 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Settings.Default.Save();
+            Settings.Default.Upgrade();
         }
     }
     public static class StringExtensions

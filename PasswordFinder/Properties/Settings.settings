@@ -1,7 +1,31 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PasswordFinder.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Lang" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RUS</Value>
+    </Setting>
+    <Setting Name="doc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="xls" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="xml" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="txt" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="rtf" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="findstring" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*парол*,*pass*,*pwd*,*логин*,*login*</Value>
+    </Setting>
+    <Setting Name="findwords" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pwd,pass,парол,пасс,парл,password,пароль
+</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
