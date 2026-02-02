@@ -1,5 +1,3 @@
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sergiomarotco&show_icons=true&theme=radical)
-
 # Password-Finder
 ## Description
 **RUS**: Данная программа предназначена для аудита файлов в файловых хранилищах на наличие паролей в открытом виде.
